@@ -102,24 +102,7 @@
     flex-shrink: 0;
   }
 
-  @media screen and (max-width: 720px) {
-    body {
-      scale: 0.7;
-    }
-  }
-
-  @media screen and (max-width: 530px) {
-    body {
-      justify-content: flex-start;
-      scale: 1;
-    }
-
-    main {
-      margin: 0;
-    }
-  }
-
-  img,
+  */ img,
   picture,
   video,
   canvas,
