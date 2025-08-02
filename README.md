@@ -15,11 +15,11 @@ This is a solution to the [Job listings with filtering challenge on Frontend Men
 
 ## Screenshot
 
-The project screenshot will be made available Soon™.
+The project screenshot will be made available [Soon™](https://wowwiki-archive.fandom.com/wiki/Soon).
 
 ## Demo
 
-The project's live demo will be made available Soon™.
+The project's live demo will be made available [Soon™](https://wowwiki-archive.fandom.com/wiki/Soon).
 
 ## Overview
 
