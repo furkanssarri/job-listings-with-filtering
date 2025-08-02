@@ -45,4 +45,20 @@
     line-height: var(--lh-100);
     letter-spacing: var(--ls-015);
   }
+
+  .tag {
+    padding: var(--spacing-100);
+    margin-right: var(--spacing-100);
+    border-radius: 0.75rem;
+    color: var(--colors-white);
+    text-transform: uppercase;
+  }
+
+  .new {
+    background-color: var(--colors-green-400);
+  }
+
+  .featured {
+    background-color: var(--colors-green-900);
+  }
 }
