@@ -19,7 +19,7 @@ The project screenshot will be made available [Soon™](https://wowwiki-archive.
 
 ## Demo
 
-The project's live demo will be made available [Soon™](https://wowwiki-archive.fandom.com/wiki/Soon).
+Here you can find the working the [live demo](https://furkanssarri-job-listings-with-filter.netlify.app/).
 
 ## Overview
 
