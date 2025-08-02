@@ -29,7 +29,7 @@ const Main = () => {
                     )}
                   </div>
                 </div>
-                <h2>{item.position}</h2>
+                <h2 className="text-preset-1-bold">{item.position}</h2>
 
                 <div className="job-meta-container">
                   <ul className="text-preset-3-medium">
@@ -39,6 +39,7 @@ const Main = () => {
                   </ul>
                 </div>
               </div>
+              <hr />
               <div className="job-tags text-preset-3-bold">
                 <span>
                   <a href="#">{item.role}</a>

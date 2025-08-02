@@ -141,4 +141,46 @@
       margin: 0;
     }
   }
+
+  @media (min-width: 1200px) {
+    header {
+      margin-bottom: 4.75rem;
+    }
+    main {
+      margin-top: 0;
+      display: block;
+      gap: 0;
+      justify-content: unset;
+      align-items: unset;
+      width: 90%;
+    }
+
+    main article {
+      flex: unset;
+      max-width: 1100px;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: var(--spacing-200);
+      padding: var(--spacing-300);
+      padding-left: var(--spacing-500);
+    }
+
+    main article .job-info .company-logo {
+      position: relative;
+      top: auto;
+      width: auto;
+      height: auto;
+    }
+
+    main article .job-info {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    main article .job-info .job-tags span {
+      flex: unset;
+    }
+  }
 }

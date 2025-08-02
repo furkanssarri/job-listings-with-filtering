@@ -61,4 +61,14 @@
   .featured {
     background-color: var(--colors-green-900);
   }
+
+  hr {
+    color: var(--colors-gray-300);
+  }
+
+  @media (min-width: 1200px) {
+    hr {
+      display: none;
+    }
+  }
 }
