@@ -8,6 +8,17 @@
   :root {
     /* colors */
 
+    --colors-white: hsl(0, 100%, 100%);
+    --colors-black: hsl(0, 0%, 0%);
+
+    --colors-gray-400: hsl(180, 8%, 52%);
+    --colors-gray-300: hsl(180, 10%, 74%);
+
+    --colors-green-900: hsl(180, 14%, 20%);
+    --colors-green-400: hsl(180, 29%, 50%);
+    --colors-green-350: hsl(180, 39%, 56%);
+    --colors-green-50: hsl(180, 52%, 96%);
+
     /* font-sizes */
     --fs-22: 1.375rem;
     --fs-18: 1.125rem;
@@ -28,7 +39,13 @@
     --fw-b: bold;
     --fw-m: medium;
 
-    /* text-presets */
+    /* spacing */
+
+    --spacing-0: 0rem; /* 0px */
+    --spacing-100: 0.5rem; /* 8px */
+    --spacing-200: 1rem; /* 16px */
+    --spacing-300: 1.5rem; /* 24px */
+    --spacing-500: 2.5rem; /* 40px */
   }
 
   *,
@@ -56,7 +73,6 @@
     line-height: 1.5;
     font-size: 0.9375rem;
     -webkit-font-smoothing: antialiased;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,8 +89,7 @@
 
   html,
   body,
-  #root,
-  .app-wrapper {
+  #root {
     height: 100%;
     min-height: 100vh;
     width: 100vw;
@@ -84,31 +99,9 @@
     overflow-x: hidden;
   }
 
-  .app-wrapper {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
-  }
-
-  .main-content {
-    flex: 1 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 0;
-    width: 100%;
-    overflow-x: auto;
-  }
-
   footer {
     flex-shrink: 0;
   }
-
-  /* main {
-    margin-bottom: 5vh;
-  } */
 
   @media screen and (max-width: 720px) {
     body {

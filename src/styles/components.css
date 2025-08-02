@@ -1,0 +1,49 @@
+@layer components {
+  header {
+    height: 9.75rem;
+    width: 100%;
+    background-color: var(--colors-green-350);
+  }
+
+  main {
+    background-color: var(--colors-green-50);
+
+    & article {
+      border-radius: 5px;
+      border-left: 5px solid var(--colors-green-400);
+      margin-bottom: var(--spacing-200);
+      box-shadow: 0 4px 24px rgba(13, 113, 130, 0.1),
+        0 1.5px 6px rgba(0, 0, 0, 0.04);
+
+      & .job-info {
+        padding: var(--spacing-300);
+      }
+
+      & .job-meta-container {
+        & ul {
+          list-style-type: none;
+          display: flex;
+        }
+      }
+    }
+  }
+
+  footer {
+    text-align: center;
+    align-items: center;
+    padding: 0.3rem;
+    width: 100%;
+  }
+
+  .footer-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .footer-icon {
+    font-size: 1.2rem;
+  }
+}
