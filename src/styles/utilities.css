@@ -1,0 +1,48 @@
+@layer utilities {
+  .text-preset-1-bold {
+    font-family: "League Spartan";
+    font-size: var(--fs-22);
+    line-height: var(--lh-110);
+    letter-spacing: var(--ls-0);
+  }
+
+  .text-preset-2-bold {
+    font-family: "League Spartan";
+    font-weight: var(--fw-b);
+    font-size: var(--fs-18);
+    line-height: var(--lh-100);
+    letter-spacing: var(--ls-0);
+  }
+
+  .text-preset-2-medium {
+    font-family: "League Spartan";
+    font-weight: var(--fw-m);
+    font-size: var(--fs-18);
+    line-height: var(--lh-100);
+    letter-spacing: var(--ls-015);
+  }
+
+  .text-preset-3-bold {
+    font-family: "League Spartan";
+    font-weight: var(--fw-b);
+    font-size: var(--fs-16);
+    line-height: var(--lh-150);
+    letter-spacing: var(--ls-015);
+  }
+
+  .text-preset-3-medium {
+    font-family: "League Spartan";
+    font-weight: var(--fw-m);
+    font-size: var(--fs-16);
+    line-height: var(--lh-150);
+    letter-spacing: var(--ls-015);
+  }
+
+  .text-preset-4-medium {
+    font-family: "League Spartan";
+    font-weight: var(--fw-b);
+    font-size: var(--fs-14);
+    line-height: var(--lh-100);
+    letter-spacing: var(--ls-015);
+  }
+}
