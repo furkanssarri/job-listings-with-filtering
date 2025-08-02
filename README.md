@@ -60,20 +60,18 @@ This project is built with the following technologies:
 
 ```text
 job-listings-with-filtering/
-├── public/
-│ └── ... (static assets, e.g. favicon, images)
-├── src/
-│ ├── components/
-│ │ └── ... (React components)
-│ ├── data/
-│ │ └── jobs.json
-│ ├── App.jsx
-│ ├── main.jsx
-│ └── index.css
-├── package.json
-├── vite.config.js
-├── README.md
-└── node_modules/
+└── src/
+    ├── App.jsx
+    ├── main.jsx
+    ├── index.css
+    ├── components/
+    │   └── Attribution.jsx
+    ├── data/
+    │   └── data.json
+    ├── styles/
+    │   ├── _base.css
+    │   ├── components.css
+    │   └── utilities.css
 ```
 
 ## Acknowledgements
