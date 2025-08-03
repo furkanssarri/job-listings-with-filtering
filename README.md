@@ -4,7 +4,7 @@ This is a solution to the [Job listings with filtering challenge on Frontend Men
 
 ## Table of Contents
 
-- [Screenshot](#screenshot)
+- [Design preview](#design-preview)
 - [Demo](#demo)
 - [Overview](#overview)
 - [Features](#features)
@@ -13,9 +13,10 @@ This is a solution to the [Job listings with filtering challenge on Frontend Men
 - [Folder Structure](#folder-structure)
 - [Acknowledgments](#acknowledgements)
 
-## Screenshot
+## Design Preview
 
-The project screenshot will be made available [Soon™](https://wowwiki-archive.fandom.com/wiki/Soon).
+![Design preview](preview-lg.png)
+![Design preview](preview-sm.png)
 
 ## Demo
 
