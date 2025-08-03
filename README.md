@@ -10,18 +10,18 @@ This is a solution to the [Job listings with filtering challenge on Frontend Men
 - [Features](#features)
 - [Getting Started](#getting-started)
 - [Built With](#built-with)
-- [Folder Structure](#folder-structure)
+- [Directory Tree](#directory-tree)
 - [Acknowledgments](#acknowledgements)
 
 ## Design Preview
 
-**Large Screen Preview**
+### Large Screen Preview
 
 ![Large screen design preview](preview-lg.png)
 
 ---
 
-**Mobile Screen Preview**
+### Mobile Screen Preview
 
 ![Mobile screen design preview](preview-sm.png)
 
@@ -64,7 +64,7 @@ This project is built with the following technologies:
 - [React](https://reactjs.org/) - JS library
 - [Vite](https://vite.dev/) - Bundler
 
-## Folder Structure
+## Directory Tree
 
 ```text
 src/
