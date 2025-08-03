@@ -15,8 +15,15 @@ This is a solution to the [Job listings with filtering challenge on Frontend Men
 
 ## Design Preview
 
-![Design preview](preview-lg.png)
-![Design preview](preview-sm.png)
+**Large Screen Preview**
+
+![Large screen design preview](preview-lg.png)
+
+---
+
+**Mobile Screen Preview**
+
+![Mobile screen design preview](preview-sm.png)
 
 ## Demo
 
@@ -60,23 +67,24 @@ This project is built with the following technologies:
 ## Folder Structure
 
 ```text
-job-listings-with-filtering/
-└── src/
-    ├── App.jsx
-    ├── main.jsx
-    ├── index.css
-    ├── components/
-    │   └── Attribution.jsx
-    ├── data/
-    │   └── data.json
-    ├── styles/
-    │   ├── _base.css
-    │   ├── components.css
-    │   └── utilities.css
+src/
+├── App.jsx
+├── index.css
+├── main.jsx
+├── components/
+│   ├── Footer.jsx
+│   ├── Header.jsx
+│   └── Main.jsx
+├── data/
+│   └── data.json
+├── styles/
+│   ├── _base.css
+│   ├── components.css
+│   └── utilities.css
 ```
 
 ## Acknowledgements
 
-- Challenge by: [frontend-mentor](https://www.frontendmentor.io/).
+- Challenge by: [frontend-mentor](https://www.frontendmentor.io/)
 
 [↑ back to top](#job-listings-with-filtering)
