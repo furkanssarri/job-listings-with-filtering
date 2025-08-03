@@ -15,11 +15,12 @@
 
   main {
     margin-top: 2rem;
+    position: relative;
   }
 
   main article {
     cursor: pointer;
-    max-width: 700px;
+    max-width: 46.3125rem;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -122,6 +123,29 @@
     color: var(--colors-white);
   }
 
+  /* Ensure main is relative so .filters-wrapper can be absolutely positioned */
+  main {
+    position: relative;
+  }
+
+  /* Filter bar: overlap header, match article width, center horizontally */
+  main .filters-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -4.6875rem; /* Slightly overlaps header, adjust as needed */
+    max-width: 46.3125rem;
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 0 15px 20px -5px #0d718215;
+    background-color: var(--colors-white);
+    z-index: 10;
+    padding: var(--spacing-300);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   footer {
     text-align: center;
     align-items: center;
@@ -152,12 +176,20 @@
       gap: var(--spacing-500);
       justify-content: center;
       align-items: flex-start;
+      margin-top: 4.5rem;
     }
 
     main article {
       flex: 1 1 320px;
       max-width: 350px;
       margin: 0;
+    }
+
+    main .filters-wrapper {
+      /* max-width: 350px; */
+      /* width: 100%; */
+      top: -7.5rem;
+      padding: var(--spacing-300);
     }
   }
 
@@ -201,5 +233,18 @@
     main article .job-info .job-tags button {
       flex: unset;
     }
+
+    main .filters-wrapper {
+      max-width: 1100px;
+      width: 90%;
+      top: -7.5rem;
+      padding-left: var(--spacing-500);
+    }
   }
+
+  /* @media (min-width: 1200px) {
+    main .filters-wrapper {
+      top: -7.5rem;
+    }
+  } */
 }
