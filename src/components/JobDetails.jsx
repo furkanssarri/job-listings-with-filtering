@@ -10,7 +10,7 @@ const JobDetails = ({ item }) => {
       />
       <div className="job-details">
         <div className="job-title-container">
-          <h2 className="text-preset-4-medium">{item.company}</h2>
+          <h2 className="text-preset-2-bold">{item.company}</h2>
           <div
             className="job-tags-container text-preset-4-medium"
             aria-label="Job status tags"
@@ -19,9 +19,9 @@ const JobDetails = ({ item }) => {
             {item.featured && <span className="tag featured">Featured</span>}
           </div>
         </div>
-        <h1 className="text-preset-3-bold">{item.position}</h1>
+        <h1 className="text-preset-1-bold">{item.position}</h1>
         <div className="job-meta-container">
-          <ul className="text-preset-3-medium">
+          <ul className="text-preset-2-medium">
             <li>{item.postedAt}</li>
             <li>{item.contract}</li>
             <li>{item.location}</li>

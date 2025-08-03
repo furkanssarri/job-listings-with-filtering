@@ -68,7 +68,7 @@
     gap: var(--spacing-100);
   }
 
-  main article .job-title-container h1 {
+  main article .job-title-container h2 {
     color: var(--colors-green-400);
   }
 
@@ -77,12 +77,12 @@
     gap: var(--spacing-200);
   }
 
-  main article .job-info .job-details h2 {
+  main article .job-info .job-details h1 {
     cursor: pointer;
     transition: 0.1s ease-in;
   }
 
-  main article .job-info .job-details h2:hover {
+  main article .job-info .job-details h1:hover {
     color: var(--colors-green-400);
   }
 
