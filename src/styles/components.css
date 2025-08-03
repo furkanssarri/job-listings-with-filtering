@@ -32,7 +32,7 @@
     border-radius: 5px;
     margin-bottom: var(--spacing-200);
     margin-top: var(--spacing-500);
-    box-shadow: 0 4px 4px 0 #00000025;
+    box-shadow: 0 15px 20px -5px #0d718215;
     transition: 0.3s ease-in-out;
   }
 
@@ -48,14 +48,17 @@
     gap: var(--spacing-100);
   }
 
+  main article .job-info .job-name {
+    display: flex;
+  }
+
   main article .job-info .company-logo {
     position: absolute;
     top: -24px;
-    border-radius: 50%;
     object-fit: contain;
-    border: 1px solid #eee;
     width: 48px;
     height: 48px;
+    margin-right: var(--spacing-300);
   }
 
   main article .job-info .job-details {
@@ -257,9 +260,9 @@
       width: 90%;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: var(--spacing-200);
-      padding: var(--spacing-300);
-      padding-left: var(--spacing-500);
+      margin-bottom: var(--spacing-300);
+      padding: var(--spacing-200);
+      border: 1px solid transparent;
     }
 
     main article .job-info .company-logo {

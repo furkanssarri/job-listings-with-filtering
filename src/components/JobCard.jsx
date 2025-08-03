@@ -6,7 +6,6 @@ const JobCard = ({ item, handleAddFilter }) => {
   return (
     <article className={item.featured ? "featured-left-border" : ""}>
       <div className="job-info">
-        <img className="company-logo" src={item.logo} alt={item.company} />
         <JobDetails item={item} />
         <hr />
         <JobTags item={item} handleAddFilter={handleAddFilter} />
