@@ -34,6 +34,8 @@
     margin-top: var(--spacing-500);
     box-shadow: 0 15px 20px -5px #0d718215;
     transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
   }
 
   main article:hover {
@@ -46,6 +48,9 @@
     display: flex;
     flex-direction: column;
     gap: var(--spacing-100);
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
   }
 
   main article .job-info .job-name {
@@ -135,7 +140,7 @@
 
   /* Filter bar: overlap header, match article width, center horizontally */
   .filters-wrapper {
-    position: static; /* Not absolute */
+    position: static;
     max-width: 700px;
     width: 90%;
     margin: 0 auto;
@@ -247,7 +252,6 @@
     }
     main {
       margin-top: 0;
-      display: block;
       gap: 0;
       justify-content: unset;
       align-items: unset;
@@ -263,6 +267,9 @@
       margin-bottom: var(--spacing-300);
       padding: var(--spacing-200);
       border: 1px solid transparent;
+      height: 152px;
+      display: flex;
+      align-items: center;
     }
 
     main article .job-info .company-logo {
@@ -276,6 +283,11 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
+      width: 100%;
+    }
+
+    main article .job-info .job-details {
+      margin-top: 0;
     }
 
     main article .job-info .job-tags button {
@@ -289,10 +301,4 @@
       padding-left: var(--spacing-500);
     }
   }
-
-  /* @media (min-width: 1200px) {
-    .filters-wrapper {
-      top: -7.5rem;
-    }
-  } */
 }
