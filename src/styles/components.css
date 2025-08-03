@@ -88,6 +88,7 @@
     display: flex;
     gap: var(--spacing-100);
     color: var(--colors-gray-400);
+    padding-left: 0;
   }
 
   main article .job-meta-container ul li::after {
