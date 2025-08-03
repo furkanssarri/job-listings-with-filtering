@@ -71,9 +71,15 @@ src/
 ├── App.jsx
 ├── index.css
 ├── main.jsx
+├── assets/
+│   └── LeagueSpartan-VariableFont_wght.ttf
 ├── components/
+│   ├── Filterbar.jsx
 │   ├── Footer.jsx
 │   ├── Header.jsx
+│   ├── JobCard.jsx
+│   ├── JobDetails.jsx
+│   ├── JobTags.jsx
 │   └── Main.jsx
 ├── data/
 │   └── data.json
