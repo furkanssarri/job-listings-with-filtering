@@ -18,6 +18,7 @@
   }
 
   main article {
+    cursor: pointer;
     max-width: 700px;
     width: 90%;
     margin-left: auto;
@@ -29,8 +30,13 @@
     border-radius: 5px;
     margin-bottom: var(--spacing-200);
     margin-top: var(--spacing-500);
-    box-shadow: 0 4px 24px rgba(13, 113, 130, 0.1),
-      0 1.5px 6px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 4px 4px 0 #00000025;
+    transition: 0.3s ease-in-out;
+  }
+
+  main article:hover {
+    box-shadow: 0 15px 20px -5px #0d718215;
+    transform: scale(1.01);
   }
 
   main article .job-info {
@@ -66,6 +72,15 @@
     gap: var(--spacing-200);
   }
 
+  main article .job-info .job-details h2 {
+    cursor: pointer;
+    transition: 0.1s ease-in;
+  }
+
+  main article .job-info .job-details h2:hover {
+    color: var(--colors-green-400);
+  }
+
   main article .job-meta-container ul {
     list-style-type: none;
     display: flex;
@@ -88,7 +103,7 @@
     gap: var(--spacing-100);
   }
 
-  main article .job-info .job-tags span {
+  main article .job-info .job-tags button {
     flex: 1 1 30%;
     max-width: calc(33.333% - var(--spacing-100));
     box-sizing: border-box;
@@ -96,11 +111,15 @@
     background-color: var(--colors-green-50);
     color: var(--colors-green-400);
     margin-bottom: var(--spacing-100);
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: 0.2s ease-in;
   }
 
-  main article .job-info .job-tags span a {
-    text-decoration: none;
-    color: inherit;
+  main article .job-info .job-tags button:hover {
+    background-color: var(--colors-green-400);
+    color: var(--colors-white);
   }
 
   footer {
@@ -179,7 +198,7 @@
       justify-content: space-between;
     }
 
-    main article .job-info .job-tags span {
+    main article .job-info .job-tags button {
       flex: unset;
     }
   }
