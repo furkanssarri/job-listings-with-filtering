@@ -13,6 +13,16 @@ function App() {
     }
   };
 
+  const handleRemoveFilter = (filter) => {
+    if (filter) {
+      setFilters(filters.filter((f) => f !== filter));
+    }
+  };
+
+  const handleClearAllFilters = () => {
+    setFilters([]);
+  };
+
   useEffect(() => {
     console.log(filters);
   }, [filters]);
@@ -20,7 +30,12 @@ function App() {
   return (
     <>
       <Header />
-      <Main filters={filters} handleAddFilter={handleAddFilter} />
+      <Main
+        filters={filters}
+        handleAddFilter={handleAddFilter}
+        onRemoveFilter={handleRemoveFilter}
+        onClearAllFilters={handleClearAllFilters}
+      />
       <Footer />
     </>
   );
