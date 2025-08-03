@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Main from "./components/Main";
+import Filterbar from "./components/Filterbar";
 
 function App() {
   const [filters, setFilters] = useState([]);
@@ -30,6 +31,13 @@ function App() {
   return (
     <>
       <Header />
+      {filters.length > 0 && (
+        <Filterbar
+          filters={filters}
+          handleRemoveFilter={handleRemoveFilter}
+          handleClearAllFilters={handleClearAllFilters}
+        />
+      )}
       <Main
         filters={filters}
         handleAddFilter={handleAddFilter}

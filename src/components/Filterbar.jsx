@@ -1,9 +1,9 @@
 const Filterbar = ({ filters, handleRemoveFilter, handleClearAllFilters }) => {
   return (
     <div className="filters-wrapper">
-      {filters.map((filter) => (
-        <div key={filter} className="filters">
-          <span className="filter-tag">
+      <div className="filters text-preset-3-bold">
+        {filters.map((filter) => (
+          <span key={filter} className="filter-tag">
             {filter}
             <button
               type="button"
@@ -13,18 +13,17 @@ const Filterbar = ({ filters, handleRemoveFilter, handleClearAllFilters }) => {
               X
             </button>
           </span>
-        </div>
-      ))}
-      <div className="clear-btn">
-        <span className="clear-all">
-          <button
-            type="button"
-            className="clear-filters"
-            onClick={handleClearAllFilters}
-          >
-            Clear All
-          </button>
-        </span>
+        ))}
+      </div>
+
+      <div className="clear-btn text-preset-3-bold">
+        <button
+          type="button"
+          className="clear-filters"
+          onClick={handleClearAllFilters}
+        >
+          Clear
+        </button>
       </div>
     </div>
   );

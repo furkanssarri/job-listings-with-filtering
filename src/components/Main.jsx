@@ -1,12 +1,6 @@
 import data from "../data/data.json";
-import Filterbar from "./Filterbar";
 
-const Main = ({
-  filters,
-  handleAddFilter,
-  onRemoveFilter,
-  onClearAllFilters,
-}) => {
+const Main = ({ filters, handleAddFilter }) => {
   const matchesFilters = (item) => {
     const allTags = [
       item.role,
@@ -22,14 +16,6 @@ const Main = ({
 
   return (
     <main>
-      {Array.isArray(filters) && filters.length > 0 && (
-        <Filterbar
-          filters={filters}
-          handleRemoveFilter={onRemoveFilter}
-          handleClearAllFilters={onClearAllFilters}
-        />
-      )}
-
       {filteredData.map((item) => (
         <article
           key={item.id}

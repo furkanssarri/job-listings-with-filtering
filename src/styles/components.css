@@ -16,6 +16,7 @@
   main {
     margin-top: 2rem;
     position: relative;
+    min-height: 69vh;
   }
 
   main article {
@@ -129,21 +130,65 @@
   }
 
   /* Filter bar: overlap header, match article width, center horizontally */
-  main .filters-wrapper {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -4.6875rem; /* Slightly overlaps header, adjust as needed */
-    max-width: 46.3125rem;
+  .filters-wrapper {
+    position: static; /* Not absolute */
+    max-width: 700px;
     width: 90%;
+    margin: 0 auto;
     border-radius: 5px;
     box-shadow: 0 15px 20px -5px #0d718215;
     background-color: var(--colors-white);
     z-index: 10;
     padding: var(--spacing-300);
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    margin-top: -2.6875rem;
+  }
+
+  .filters-wrapper .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-100);
+  }
+
+  .filters-wrapper .filters .filter-tag {
+    background-color: var(--colors-green-50);
+    color: var(--colors-green-400);
+    padding-left: var(--spacing-100);
+    border: none;
+    border-radius: 0.25rem;
+    transition: 0.2s ease-in;
+  }
+
+  .filters-wrapper .filters .filter-tag button {
+    border: none;
+    background-color: var(--colors-green-400);
+    padding: 0;
+    color: var(--colors-white);
+    height: 32px;
+    width: 32px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-left: var(--spacing-100);
+    cursor: pointer;
+    line-height: 37px;
+    text-align: center;
+  }
+
+  .filters-wrapper .filters .filter-tag button:hover {
+    background-color: var(--colors-green-900);
+  }
+
+  .filters-wrapper .clear-btn button {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+  }
+
+  .filters-wrapper .clear-btn button:hover {
+    color: var(--colors-green-400);
   }
 
   footer {
@@ -185,10 +230,9 @@
       margin: 0;
     }
 
-    main .filters-wrapper {
+    .filters-wrapper {
       /* max-width: 350px; */
-      /* width: 100%; */
-      top: -7.5rem;
+      margin-top: -2.6875rem;
       padding: var(--spacing-300);
     }
   }
@@ -234,16 +278,16 @@
       flex: unset;
     }
 
-    main .filters-wrapper {
+    .filters-wrapper {
       max-width: 1100px;
-      width: 90%;
-      top: -7.5rem;
+      margin-top: -7.6875rem;
+      margin-bottom: var(--spacing-500);
       padding-left: var(--spacing-500);
     }
   }
 
   /* @media (min-width: 1200px) {
-    main .filters-wrapper {
+    .filters-wrapper {
       top: -7.5rem;
     }
   } */
