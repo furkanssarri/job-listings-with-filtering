@@ -55,6 +55,7 @@
 
   main article .job-info .job-name {
     display: flex;
+    margin-left: var(--spacing-500);
   }
 
   main article .job-info .company-logo {
